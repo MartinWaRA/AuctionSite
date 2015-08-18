@@ -1,0 +1,15 @@
+<strong>Auction ID:<%=@a.id%> <br/><br/>
+<%=@a.name%></strong><br/><br/>
+<%=@a.description%>
+<p>
+  Bids<br/><br/>
+  <%@a.bids.each do |b|%>
+  <li>> <%=b.amount_in_pounds%></li>
+  <%end%>
+
+<p>
+<%=link_to("Create New Bid",new_auction_bid_url(@a.id))%>
+</p>
+<p>
+<%=link_to("Back to auctions",auctions_url)%>
+</p>

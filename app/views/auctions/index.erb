@@ -1,0 +1,16 @@
+
+
+<p>
+
+	<%@auctions.each do |a|%>
+		<li><strong><%=link_to(a.name,auction_url(a))%></strong> ;<%=link_to("Delete",auction_url(a),method: :delete)%> </li>
+<%end%>
+
+<p>
+	<%=link_to("New Auction",new_auction_url)%>
+</p>
+<p>
+	<%=link_to("Have a look at Products",products_url)%>
+</p>
+
+

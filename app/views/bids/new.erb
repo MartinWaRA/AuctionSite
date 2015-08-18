@@ -1,0 +1,6 @@
+<%=form_for([@auction,@bid]) do |f|%>
+	<p><%=f.label(:amount_in_pence)%>
+	<%=f.text_field(:amount_in_pence)%><br /><br />
+
+<%=f.submit("Do it")%>
+<%end%>

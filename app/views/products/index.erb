@@ -1,0 +1,22 @@
+Hello World for the millionth time.
+
+<strong>
+	<%=Time.now%>
+</strong>
+
+<p>
+	<%@products.each do |p| %>
+		<li><strong><%=link_to(p.title,product_url(p))%></strong>  ; <%=time_ago_in_words(p.created_at)%> <%=link_to("Delete",product_url(p),method: :delete)%></li>
+	<%end%>
+</p>
+<p>	
+	<%=link_to("Worlds only search engine","http://www.Google.com")%>
+</p>
+<p>
+	<%=link_to("New Product",new_product_url)%>
+</p>
+<p>
+	<%=link_to("Have a look at Auctions",auctions_url)%>
+</p>
+
+

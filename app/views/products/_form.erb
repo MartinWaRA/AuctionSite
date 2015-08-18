@@ -1,0 +1,9 @@
+<%=@page_title%><br /><br />
+<%=form_for(@p) do |f|%>
+	<p><%=f.label(:title)%>
+	<%=f.text_field(:title)%><br /><br />
+	<%=f.label(:description)%>
+	<%=f.text_area(:description)%></p>
+
+<%=f.submit("Do it")%>
+<%end%>
