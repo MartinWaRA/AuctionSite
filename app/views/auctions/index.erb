@@ -1,6 +1,6 @@
 
 
-<p>All Auctons <br/><br/>
+<p><strong>All Auctons are Funny</strong><br/><br/>
 
 	<%@auctions.each do |a|%>
 		<li><strong><%=link_to(a.name,auction_url(a))%></strong> ;<%=link_to("Delete",auction_url(a),method: :delete)%> </li>
